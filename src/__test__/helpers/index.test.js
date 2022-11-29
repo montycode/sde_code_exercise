@@ -1,4 +1,4 @@
-import { countVowels, countConsonants } from '../../helpers';
+import { countVowels, countConsonants, isConsonant } from '../../helpers';
 
 describe('Test all helpers functions', () => {
     // countVowels
@@ -7,8 +7,13 @@ describe('Test all helpers functions', () => {
         expect(countConsonants('Omar')).not.toBe(3);
     });
     // countConsonants
-    test('Returns a calid count of consonants', () => {
+    test('Returns a valid count of consonants', () => {
         expect(countConsonants('Omar')).toBe(2);
         expect(countConsonants('Omar')).not.toBe(3);
+    });
+    // isConsonant
+    test('Returns a true/false based on given consonant', () => {
+        expect(isConsonant('M')).toBeTruthy();
+        expect(isConsonant('A')).toBeFalsy();
     });
 });

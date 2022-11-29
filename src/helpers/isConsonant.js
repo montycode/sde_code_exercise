@@ -1,7 +1,7 @@
 // Refactored code block to handle Single Responsability
 
 const isConsonant = (character) => {
-    // To handle lower case
+    // To handle lower case and reduce matching case.
     character = character.toUpperCase();
 
     return (
