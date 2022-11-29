@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SDE Platform Science Code Exercise",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -15,6 +16,7 @@
   "author": "MontyCode",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
     "babel-jest": "^29.3.1",
     "jest": "^29.3.1"
